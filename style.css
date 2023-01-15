@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    color: black;
+}
+
+body {
+    background-color: rgb(049, 066, 089);
+}
+
+h1 {
+    font-size: 3em;
+    background-color: rgb(003, 166, 120);
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.137);
+    cursor: default;
+    margin-bottom: 30px;
+}
+
+.title {
+    color: rgb(004, 217, 118);
+    display: inline;
+}
+
+#tic {
+    animation: tic 3000ms ease 0s infinite normal;
+}
+
+#tac {
+    animation: tac 3000ms ease 1s infinite normal;
+}
+
+#toe {
+    animation: toe 3000ms ease 2s infinite normal;
+}
+
+@keyframes tic {
+    from {
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.678);
+    }
+
+    to {
+        color: rgb(004, 217, 118);
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.678);
+    }
+}
+
+@keyframes tac {
+    from {
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.678);
+    }
+
+    to {
+        color: rgb(004, 217, 118);
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.678);
+    }
+}
+
+@keyframes toe {
+    from {
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.678);
+    }
+
+    to {
+        color: rgb(004, 217, 118);
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.678);
+    }
+}
+
+main {
+    background-color: rgb(115, 184, 191);
+    width: 450px;
+    height: 420px;
+    margin: auto;
+    padding: 60px;
+    border-radius: 3px;
+}
+
+#board {
+    background-color: rgb(003, 166, 120);
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 6px;
+}
+
+.rows {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    flex-grow: 1;
+}
+
+hr {
+    background-color: rgb(003, 074, 166);
+    border: none;
+    border-radius: 5px;
+    animation: pulse 3s ease 1s infinite normal;
+}
+
+.hrHor {
+    height: 6px;
+    width: calc(100% + 10px);
+    margin-left: -5px;
+}
+
+.hrVer {
+    width: 6px;
+    height: calc(100% + 10px);
+    margin-top: -5px;
+}
+
+.fields:hover {
+    background-color: rgba(4, 217, 118, 0.521);
+}
+
+.fields {
+    display: inline-block;
+    flex-grow: 1;
+    border-radius: 6px;
+}
+
+@keyframes pulse {
+    0% {background-color: rgb(003, 074, 166);}
+    70% {background-color: rgb(2, 49, 151);}
+    100% {background-color: rgb(003, 074, 166);}
+}
