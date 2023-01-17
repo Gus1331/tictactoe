@@ -27,15 +27,15 @@ h1 {
 }
 
 #tic {
-    animation: tic 3000ms ease 0s infinite normal;
+    animation: tic 3000ms ease 1s infinite normal;
 }
 
 #tac {
-    animation: tac 3000ms ease 1s infinite normal;
+    animation: tac 3000ms ease 2s infinite normal;
 }
 
 #toe {
-    animation: toe 3000ms ease 2s infinite normal;
+    animation: toe 3000ms ease 3s infinite normal;
 }
 
 @keyframes tic {
@@ -127,10 +127,15 @@ hr {
     display: inline-block;
     flex-grow: 1;
     border-radius: 6px;
+    background-image: none;
+    background-size: cover;
 }
 
 @keyframes pulse {
     0% {background-color: rgb(003, 074, 166);}
     70% {background-color: rgb(2, 49, 151);}
     100% {background-color: rgb(003, 074, 166);}
+}
+#b2{
+    background-image: url(content/player1.png);
 }
