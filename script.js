@@ -18,18 +18,3 @@ function gameStart(){
 function clearBoard(i){
     i.style.backgroundImage = "none"
 }
-
-function player1Turn(){
-    all.forEach( (i) => {
-        i.innerHTML = "<div id=",i," class='fields' onclick=player1Move(); onmouseover(this); onmouseout(all.forEach( (i) => {clearBoard(i)} ););> </div>"
-    })
-}
-function player2Turn(){
-    all.forEach( (i) => {
-        i.innerHTML = "<div id=",i," class='fields' onclick=player2Move(); onmouseover(this); onmouseout(all.forEach( (i) => {clearBoard(i)} ););> </div>"
-    })
-}
-
-function player1Move(e){
-    e.style.backgroundImage = "url(content/player1.png))"
-}
