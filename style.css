@@ -124,11 +124,10 @@ hr {
 }
 
 .fields {
+    position: relative;
     display: inline-block;
     flex-grow: 1;
     border-radius: 6px;
-    background-image: none;
-    background-size: cover;
 }
 
 @keyframes pulse {
@@ -136,6 +135,18 @@ hr {
     70% {background-color: rgb(2, 49, 151);}
     100% {background-color: rgb(003, 074, 166);}
 }
-#b2{
+.player1, .player2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgba(0, 0, 0, 0);
+}
+.player1{
     background-image: url(content/player1.png);
+}
+.player2{
+    background-image: url(content/player2.png);
 }
