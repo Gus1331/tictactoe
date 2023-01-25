@@ -65,7 +65,24 @@ main {
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.678);
     }
 }
-
+/* Winner display */
+h1 > span{
+    color: rgb(255, 255, 255);
+    animation: winner 2s ease 250ms infinite normal;
+}
+@keyframes winner {
+    0% {
+        text-shadow: 0 0 2px rgb(255, 255, 255);
+    }
+    
+    50% {
+        text-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+    
+    100% {
+        text-shadow: 0 0 2px rgb(0, 0, 0);
+    }
+}
  /* Pulse animation on the # */
  @keyframes pulse {
     0% {
@@ -172,4 +189,14 @@ hr {
 .button:hover{
     background-color: rgb(9, 180, 115)
 }
-/* END OF GAME */
+/* END OF GAME */ @media screen and (max-width: 550px) {
+    h1{
+        width: 100vw;
+    }
+    main{
+        width: 100%;
+        padding: 0;
+        padding-top: 50px;
+    }
+    
+}
